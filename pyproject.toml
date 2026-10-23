@@ -1,0 +1,25 @@
+[project]
+name = "travel-job-collector"
+version = "0.1.0"
+description = "Public job candidates for Travel Job manual review"
+readme = "README.md"
+authors = [
+    { name = "daeyoung-k", email = "eodud4976@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = ["beautifulsoup4>=4.14,<5"]
+
+[project.scripts]
+jobplanet = "travel_job_collector.jobplanet:main"
+saramin = "travel_job_collector.saramin:main"
+jobkorea = "travel_job_collector.jobkorea:main"
+gubgoo = "travel_job_collector.gubgoo:main"
+idge = "travel_job_collector.idge:main"
+daangn = "travel_job_collector.daangn:main"
+alba = "travel_job_collector.alba:main"
+albamon = "travel_job_collector.albamon:main"
+travel-job-collector = "travel_job_collector:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
